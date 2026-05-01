@@ -1,0 +1,626 @@
+[
+  {
+    "nama_pos":"Air Pura",
+    "lat":-1.99,
+    "lon":100.95,
+    "hujan_pos":6.5,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"BPK Padang Laban",
+    "lat":-1.917,
+    "lon":100.87,
+    "hujan_pos":65.0,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"BPK Batang Kapas",
+    "lat":-1.49,
+    "lon":100.61,
+    "hujan_pos":3.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Lunang",
+    "lat":-2.26,
+    "lon":101.1,
+    "hujan_pos":43.2,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"BPK Lembah Gumanti",
+    "lat":-1.084,
+    "lon":100.78,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"UPTD Alahan Panjang",
+    "lat":-0.98,
+    "lon":100.78,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Balitbu Sumani",
+    "lat":-0.71964,
+    "lon":100.59724,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Balitbu Aripan",
+    "lat":-0.698,
+    "lon":100.6,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Tanjung Gadang",
+    "lat":-0.78,
+    "lon":101.17,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Tanjung Lolo",
+    "lat":-0.89462,
+    "lon":101.19145,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"BPK Sijunjung",
+    "lat":-0.7,
+    "lon":101.01,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"BPP 4 Nagari",
+    "lat":-0.67,
+    "lon":100.88,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Lubuk Tarok",
+    "lat":-0.82,
+    "lon":101.03,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Diperta Tanah Datar",
+    "lat":-0.475,
+    "lon":100.62,
+    "hujan_pos":13.0,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"BPP Sungayang",
+    "lat":-0.38,
+    "lon":100.63,
+    "hujan_pos":22.0,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Bpp Sei Tarab",
+    "lat":-0.37183,
+    "lon":100.55294,
+    "hujan_pos":8.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Salimpaung",
+    "lat":-0.33,
+    "lon":100.57,
+    "hujan_pos":10.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Malalo",
+    "lat":-0.57,
+    "lon":100.48,
+    "hujan_pos":15.0,
+    "gsmap_mm":24,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"StaMet Minangkabau",
+    "lat":-0.79333,
+    "lon":100.28889,
+    "hujan_pos":60.7,
+    "gsmap_mm":24,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Sunur",
+    "lat":-0.67,
+    "lon":100.19,
+    "hujan_pos":35.0,
+    "gsmap_mm":24,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Sei Geringging",
+    "lat":-0.41986,
+    "lon":100.08845,
+    "hujan_pos":109.0,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"BPP Pilubang",
+    "lat":-0.5376,
+    "lon":100.09889,
+    "hujan_pos":40.8,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Ulakan Tapakis",
+    "lat":-0.7,
+    "lon":100.22,
+    "hujan_pos":18.5,
+    "gsmap_mm":24,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Limau Purut",
+    "lat":-0.53,
+    "lon":100.17,
+    "hujan_pos":44.5,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Staklim Padang Pariaman",
+    "lat":-0.546,
+    "lon":100.3,
+    "hujan_pos":59.7,
+    "gsmap_mm":24,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Tandikat",
+    "lat":-0.5,
+    "lon":100.25,
+    "hujan_pos":47.5,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Tiku",
+    "lat":-0.37,
+    "lon":99.91,
+    "hujan_pos":50.5,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Matur",
+    "lat":-0.305,
+    "lon":100.2528,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Koto Tuo",
+    "lat":-0.37,
+    "lon":100.3,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Baso",
+    "lat":-0.3,
+    "lon":100.48,
+    "hujan_pos":4.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Suliki",
+    "lat":-0.1,
+    "lon":100.5,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Guguak",
+    "lat":-0.91889,
+    "lon":100.6358,
+    "hujan_pos":2.5,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Luhak",
+    "lat":-0.28,
+    "lon":100.68,
+    "hujan_pos":5.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Politani Tanjungpati",
+    "lat":-0.17,
+    "lon":100.67,
+    "hujan_pos":2.7,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Muara Paiti",
+    "lat":0.24,
+    "lon":100.55,
+    "hujan_pos":1.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Bonjol",
+    "lat":0.0,
+    "lon":100.25,
+    "hujan_pos":3.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Rao",
+    "lat":0.56,
+    "lon":100.02,
+    "hujan_pos":27.5,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Muara Siberut",
+    "lat":-1.59773,
+    "lon":99.19568,
+    "hujan_pos":8.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Sei Dareh",
+    "lat":-1.061,
+    "lon":101.5,
+    "hujan_pos":1.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Timpeh",
+    "lat":-0.92,
+    "lon":101.58,
+    "hujan_pos":2.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"BPP Sangir Batanghari",
+    "lat":-1.27,
+    "lon":101.39,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Pekonina",
+    "lat":-1.59054,
+    "lon":101.14329,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Sei Baremas",
+    "lat":0.24,
+    "lon":99.45,
+    "hujan_pos":1.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Gunung Tuleh",
+    "lat":0.2363,
+    "lon":99.7166,
+    "hujan_pos":2.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Muara Palam - Parak Karakah",
+    "lat":-0.94,
+    "lon":100.38,
+    "hujan_pos":19.5,
+    "gsmap_mm":24,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Tambang Semen Padang",
+    "lat":-0.96,
+    "lon":100.5,
+    "hujan_pos":4.0,
+    "gsmap_mm":24,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Bandar Buat",
+    "lat":-0.953,
+    "lon":100.42,
+    "hujan_pos":30.0,
+    "gsmap_mm":24,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Nanggalo",
+    "lat":-0.91,
+    "lon":100.36,
+    "hujan_pos":27.0,
+    "gsmap_mm":24,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Lubuk Minturun",
+    "lat":-0.85,
+    "lon":100.38,
+    "hujan_pos":19.0,
+    "gsmap_mm":24,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Lubuk Sikarah",
+    "lat":-0.77,
+    "lon":100.61,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"BPP Kolok",
+    "lat":-0.6,
+    "lon":100.73,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"PU Padang Panjang",
+    "lat":-0.45,
+    "lon":100.44,
+    "hujan_pos":42.0,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"Payakumbuh Barat",
+    "lat":-0.25,
+    "lon":100.62,
+    "hujan_pos":1.5,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"Pariaman",
+    "lat":-0.6,
+    "lon":100.13,
+    "hujan_pos":20.0,
+    "gsmap_mm":24,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Ampek Nagari",
+    "lat":-0.1966,
+    "lon":99.996941,
+    "hujan_pos":17.2,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"ARG Berangin",
+    "lat":-0.6022,
+    "lon":100.726936,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Guguak",
+    "lat":-0.153245,
+    "lon":100.547546,
+    "hujan_pos":2.2,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Kapur IX",
+    "lat":0.24139,
+    "lon":100.55811,
+    "hujan_pos":1.2,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Linggo Sari Baganti",
+    "lat":-1.906944,
+    "lon":100.882797,
+    "hujan_pos":20.0,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"ARG Rao Pasaman",
+    "lat":0.561,
+    "lon":100.0,
+    "hujan_pos":25.6,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"ARG Sijunjung",
+    "lat":-0.697,
+    "lon":101.0,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Sipora Jaya",
+    "lat":-2.06,
+    "lon":99.6,
+    "hujan_pos":1.2,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Solok",
+    "lat":-0.9466,
+    "lon":100.6,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Solok Selatan",
+    "lat":-1.555,
+    "lon":101.2,
+    "hujan_pos":0.2,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Sungai Dareh",
+    "lat":-0.983,
+    "lon":101.5,
+    "hujan_pos":0.6,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG Sungai Limau",
+    "lat":-0.534895,
+    "lon":100.102493,
+    "hujan_pos":48.0,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"ARG Sungai Tarab",
+    "lat":-0.412624,
+    "lon":100.568275,
+    "hujan_pos":22.4,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"ARG SMPK Tanah Datar",
+    "lat":-0.500556,
+    "lon":100.568275,
+    "hujan_pos":5.8,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"ARG X Koto",
+    "lat":-0.3936,
+    "lon":100.41301,
+    "hujan_pos":1.8,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"AWS Alahan Panjang",
+    "lat":-1.095582,
+    "lon":100.794296,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"AWS Canduang",
+    "lat":-0.328342,
+    "lon":100.439331,
+    "hujan_pos":0.6,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"AWS Harau",
+    "lat":-0.16989,
+    "lon":100.666,
+    "hujan_pos":1.6,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"AWS Pasaman Barat",
+    "lat":0.124304,
+    "lon":99.868561,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"AAWS Staklim Padang Pariaman",
+    "lat":-0.54585,
+    "lon":100.2985,
+    "hujan_pos":49.4,
+    "gsmap_mm":24,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"AAWS Sumani",
+    "lat":-0.722417,
+    "lon":100.597603,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"AAWS GAW Bukittinggi",
+    "lat":-0.20194,
+    "lon":100.3181,
+    "hujan_pos":0.0,
+    "gsmap_mm":0,
+    "status":"NORMAL"
+  },
+  {
+    "nama_pos":"AWS Bandara Minangkabau",
+    "lat":-0.788914,
+    "lon":100.287361,
+    "hujan_pos":58.8,
+    "gsmap_mm":24,
+    "status":"PERLU CEK"
+  },
+  {
+    "nama_pos":"AWS Maritim Bungus",
+    "lat":-1.029558,
+    "lon":100.395943,
+    "hujan_pos":51.2,
+    "gsmap_mm":0,
+    "status":"PERLU CEK"
+  }
+]

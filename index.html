@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitoring Pos Hujan Sumbar</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+}
+
+#map{
+  height:100vh;
+  width:100%;
+}
+
+.panel{
+  position:absolute;
+  top:15px;
+  left:15px;
+  z-index:1000;
+  background:white;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  width:260px;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.small{
+  font-size:13px;
+  color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="panel">
+  <div class="title">🌧 Monitoring Pos Hujan</div>
+  <div class="small">Sumatera Barat</div>
+  <hr>
+  <div id="summary">Loading data...</div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+
+var map = L.map('map').setView([-0.9,100.5],8);
+
+L.tileLayer(
+'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{
+maxZoom:18
+}).addTo(map);
+
+// warna status
+function warna(status){
+  if(status=="NORMAL") return "green";
+  if(status=="PERLU CEK") return "orange";
+  if(status=="SUSPECT") return "red";
+  return "gray";
+}
+
+// baca data.json
+fetch("data.json")
+.then(res => res.json())
+.then(data => {
+
+let normal=0;
+let cek=0;
+let suspect=0;
+
+data.forEach(d => {
+
+if(d.status=="NORMAL") normal++;
+if(d.status=="PERLU CEK") cek++;
+if(d.status=="SUSPECT") suspect++;
+
+L.circleMarker([d.lat,d.lon],{
+radius:8,
+fillColor:warna(d.status),
+color:"#000",
+weight:1,
+fillOpacity:0.9
+})
+.addTo(map)
+.bindPopup(`
+<b>${d.nama_pos}</b><br>
+Curah Hujan Pos : ${d.hujan_pos} mm<br>
+GSMaP : ${Number(d.gsmap_mm).toFixed(1)} mm<br>
+Status : <b>${d.status}</b>
+`);
+
+});
+
+document.getElementById("summary").innerHTML = `
+🟢 Normal : ${normal}<br>
+🟠 Perlu Cek : ${cek}<br>
+🔴 Suspect : ${suspect}<br><br>
+📡 Update otomatis dari data.json
+`;
+
+})
+.catch(err=>{
+document.getElementById("summary").innerHTML="Gagal membaca data.json";
+});
+
+</script>
+
+</body>
+</html>
