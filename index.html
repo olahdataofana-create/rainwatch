@@ -1,121 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Monitoring Pos Hujan Sumbar</title>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-
-<style>
-html,body{
-margin:0;
-padding:0;
-font-family:Arial;
-}
-
-#map{
-height:100vh;
-width:100%;
-}
-
-.panel{
-position:absolute;
-top:10px;
-left:10px;
-z-index:1000;
-background:white;
-padding:12px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-width:260px;
-}
-
-.title{
-font-size:18px;
-font-weight:bold;
-margin-bottom:10px;
-}
-
-.badge{
-padding:5px 8px;
-border-radius:5px;
-color:white;
-font-size:12px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Pos Hujan Sumbar</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        .header-title {
+            position: absolute; top: 10px; left: 50px; z-index: 1000;
+            background: white; padding: 10px 20px; border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .legend {
+            background: white; padding: 10px; line-height: 18px;
+            color: #555; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; border-radius: 50%; }
+    </style>
 </head>
-
 <body>
 
-<div class="panel">
-<div class="title">Monitoring Pos Hujan Sumbar</div>
-<div id="summary">Loading...</div>
-</div>
+    <div class="header-title">
+        <h2 style="margin:0; font-size: 18px;">RainWatch Sumatera Barat</h2>
+        <small>Monitoring Real-time Pos Hujan vs Satelit GSMaP</small>
+    </div>
 
-<div id="map"></div>
+    <div id="map"></div>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // 1. Inisialisasi Peta (Center di Sumbar)
+        var map = L.map('map').setView([-0.7399, 100.8000], 8);
 
-<script>
+        // 2. Tambahkan Lapisan Peta (Basemap)
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
 
-var map = L.map('map').setView([-0.8,100.6],8);
+        // 3. Ambil data dari JSON
+        fetch('data_monitoring.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(pos => {
+                    // Tentukan warna berdasarkan status
+                    var color = pos.Status === "Suspect" ? "#e74c3c" : "#3498db";
+                    
+                    // Buat Marker Bulat
+                    var marker = L.circleMarker([pos.Lat, pos.Lon], {
+                        radius: 10,
+                        fillColor: color,
+                        color: "#fff",
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(map);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-maxZoom:18
-}).addTo(map);
+                    // Konten Popup saat diklik
+                    var popupContent = `
+                        <div style="min-width: 200px;">
+                            <h3 style="margin:0 0 10px 0;">${pos['Nama Pos']}</h3>
+                            <table style="width:100%; border-collapse: collapse;">
+                                <tr><td>Obs (Manual)</td><td>: <b>${pos.Hujan_Obs} mm</b></td></tr>
+                                <tr><td>GSMaP (Daily)</td><td>: <b>${pos.Hujan_GSMaP_Daily} mm</b></td></tr>
+                                <tr><td>Status</td><td>: <b style="color:${color}">${pos.Status}</b></td></tr>
+                            </table>
+                            <hr>
+                            <p style="font-size: 11px; color: #666;"><b>Analisis AI:</b><br>${pos.Analisis}</p>
+                        </div>
+                    `;
+                    marker.bindPopup(popupContent);
+                });
+            })
+            .catch(err => console.error("Gagal memuat data:", err));
 
-function warna(status){
-
-if(status=="NORMAL") return "green";
-if(status=="PERLU CEK") return "orange";
-if(status=="SUSPECT") return "red";
-
-return "gray";
-}
-
-fetch("data.json")
-.then(res=>res.json())
-.then(data=>{
-
-let normal=0;
-let cek=0;
-let suspect=0;
-
-data.forEach(d=>{
-
-if(d.status=="NORMAL") normal++;
-if(d.status=="PERLU CEK") cek++;
-if(d.status=="SUSPECT") suspect++;
-
-L.circleMarker([d.lat,d.lon],{
-radius:8,
-fillColor:warna(d.status),
-color:"#000",
-weight:1,
-fillOpacity:0.9
-})
-.addTo(map)
-.bindPopup(`
-<b>${d.nama_pos}</b><br>
-Hujan Pos : ${d.hujan_pos} mm<br>
-GSMaP : ${d.gsmap_mm} mm<br>
-Status : <b>${d.status}</b>
-`);
-
-});
-
-document.getElementById("summary").innerHTML=
-`
-🟢 Normal : ${normal}<br>
-🟠 Perlu Cek : ${cek}<br>
-🔴 Suspect : ${suspect}
-`;
-
-});
-
-</script>
-
+        // 4. Tambahkan Legend
+        var legend = L.control({position: 'bottomright'});
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'info legend');
+            div.innerHTML += '<i style="background: #3498db"></i> Normal<br>';
+            div.innerHTML += '<i style="background: #e74c3c"></i> Suspect (Anomali)<br>';
+            return div;
+        };
+        legend.addTo(map);
+    </script>
 </body>
 </html>
